@@ -1,0 +1,19 @@
+@tailwind components;
+.about {
+  min-height: 700px;
+}
+.tab-active {
+  color: #02040f;
+  font-weight: 700;
+}
+.dot {
+  border-radius: 50%;
+  background-color: #02040f;
+  margin-right: 10px;
+}
+.skill {
+  @apply bg-primaryYellow px-3 py-2 rounded-full text-center text-light w-auto font-medium;
+}
+.tab {
+  @apply xsm:text-2xs sm:text-xs lg:text-2xl;
+}

@@ -1,0 +1,202 @@
+<div class="about bg-light py-10">
+  <div class="my-10 bg-light flex">
+    <div
+      class="bg-primaryYellow xsm:w-4/12 lg:w-3/12 h-20 rounded-r-full shadow-2xl flex justify-center items-center"
+    >
+      <h1 class="text-dark xsm:text-2xl lg:text-4xl">
+        About <span class="text-light font-black">.</span>
+      </h1>
+    </div>
+    <div class="self-end flex justify-end xsm:w-8/12 lg:w-9/12">
+      <div class="tabs text-dark">
+        <a
+          class="tab tab-bordered"
+          (click)="toggleCareer()"
+          [ngClass]="{ 'tab-active': career }"
+          >Career</a
+        >
+        <a
+          class="tab tab-bordered"
+          (click)="toggleEducation()"
+          [ngClass]="{ 'tab-active': education }"
+          >Education</a
+        >
+        <a
+          class="tab tab-bordered"
+          (click)="toggleSkills()"
+          [ngClass]="{ 'tab-active': skills }"
+          >Skills</a
+        >
+      </div>
+    </div>
+  </div>
+  <div>
+    <div *ngIf="career" class="flex gap-5 mx-10" [@enterAnimation]>
+      <div class="bg-primaryYellow w-2"></div>
+      <div class="text-dark flex flex-col gap-y-10">
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              Assosicate Software Engineer
+            </h1>
+            <h1 class="text-xl font-bold">Experion Technologies</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              UI/UX Designer
+            </h1>
+            <h1 class="text-xl font-bold">Kiebot Learning Solutions</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              QA Engineer
+            </h1>
+            <h1 class="text-xl font-bold">Coderythm Technologies</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="education" class="flex gap-5 mx-10" [@enterAnimation]>
+      <div class="bg-primaryYellow w-2"></div>
+      <div class="text-dark flex flex-col gap-y-10">
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              Full Stack Web Development
+            </h1>
+            <h1 class="text-xl font-bold">Faith Infotech</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              Electronics And Communication Engineering
+            </h1>
+            <h1 class="text-xl font-bold">
+              Sahrdaya College Of Engineering and Technology
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              Higher Secondary Education
+            </h1>
+            <h1 class="text-xl font-bold">GHSS Kodakara</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <div class="bg-primaryYellow dot"></div>
+          <div class="flex flex-col gap-y-1">
+            <h1 class="text-3xl font-semibold text-primaryYellow">
+              High School Education
+            </h1>
+            <h1 class="text-xl font-bold">SKHSS Anandapuram</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              ex voluptates suscipit adipisci perferendis omnis commodi pariatur
+              vero inventore ducimus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="skills" class="flex gap-5 mx-10" [@enterAnimation]>
+      <div class="bg-primaryYellow w-2"></div>
+      <div class="text-dark flex flex-col gap-y-10">
+        <div class="flex flex-col gap-2">
+          <h1 class="text-3xl font-semibold text-dark">
+            Front End Development
+          </h1>
+          <div class="flex gap-5 flex-wrap">
+            <div class="skill">Html</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">Angular</div>
+            <div class="skill">React</div>
+            <div class="skill">BootStrap</div>
+            <div class="skill">Tailwind</div>
+            <div class="skill">RedwoodJS</div>
+            <div class="skill">NextJS</div>
+            <div class="skill">Material</div>
+            <div class="skill">Sass</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="text-3xl font-semibold text-dark">Back End Development</h1>
+          <div class="flex gap-5 flex-wrap">
+            <div class="skill">C#</div>
+            <div class="skill">ASP.net</div>
+            <div class="skill">NestJS</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">NodeJS</div>
+            <div class="skill">Prisma</div>
+            <div class="skill">SQL</div>
+            <div class="skill">NoSQL</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="text-3xl font-semibold text-dark">UI/UX Design</h1>
+          <div class="flex gap-5 flex-wrap">
+            <div class="skill">Prototyping</div>
+            <div class="skill">Wireframing</div>
+            <div class="skill">Figma</div>
+            <div class="skill">AdobeXD</div>
+            <div class="skill">Photoshop</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h1 class="text-3xl font-semibold text-dark">Others</h1>
+          <div class="flex gap-5 flex-wrap">
+            <div class="skill">Git</div>
+            <div class="skill">Jira</div>
+            <div class="skill">Agile</div>
+            <div class="skill">Python</div>
+            <div class="skill">Dart</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
