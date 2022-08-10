@@ -1,24 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, style, animate, transition } from '@angular/animations';
+import { fadeAnimation } from 'src/app/app.animations';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  animations: [
-    trigger(
-      'enterAnimation', [
-        transition(':enter', [
-          style({transform: 'translateX(100%)', opacity: 0}),
-          animate('500ms', style({transform: 'translateX(0)', opacity: 1}))
-        ]),
-        transition(':leave', [
-          style({transform: 'translateX(0)', opacity: 1}),
-          animate('500ms', style({transform: 'translateX(100%)', opacity: 0}))
-        ])
-      ]
-    )
-  ],
+  animations: [fadeAnimation]
 })
 export class AboutComponent implements OnInit {
   career:boolean = true;

@@ -17,7 +17,7 @@ import { ContactComponent } from './contact/contact.component';
     HeroComponent,
     ProjectsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,
