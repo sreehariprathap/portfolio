@@ -1,7 +1,8 @@
 @tailwind components;
 
 .contact {
-  height: 655px;
+  padding-bottom: 2rem;
+  min-height: 655px;
   background-image: url(../../../assets/Vector.png);
   background-repeat: no-repeat;
   background-size: cover;
