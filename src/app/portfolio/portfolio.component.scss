@@ -1,0 +1,15 @@
+@tailwind components;
+
+.top-btn {
+  margin: 1rem;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  z-index: 99 !important;
+  cursor: pointer;
+  @apply p-3 text-dark text-lg bg-primaryYellow rounded-full shadow-2xl;
+}
