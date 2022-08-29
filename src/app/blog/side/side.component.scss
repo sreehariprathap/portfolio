@@ -1,0 +1,7 @@
+@tailwind components;
+.item {
+  @apply flex justify-center w-14 h-14 items-center;
+}
+.item-selected {
+  @apply bg-primaryYellow flex justify-center rounded-full w-14 h-14 items-center;
+}

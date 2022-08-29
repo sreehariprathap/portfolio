@@ -1,0 +1,5 @@
+@tailwind components;
+.card {
+  border: 0.1px solid;
+  @apply shadow-lg p-5 rounded-md bg-light text-dark border-primaryYellow;
+}
