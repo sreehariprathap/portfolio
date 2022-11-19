@@ -7,7 +7,18 @@
         Projects <span class="text-primaryYellow font-black">.</span>
       </h1>
     </div>
-    <div></div>
+    <div class=" flex p-10 gap-4 overflow-y-scroll scroll-p-36 scrollbar-thumb-yellow-500 scrollbar-thumb-rounded-full scrollbar-thin scrollbar-track-light hover:scrollbar-thumb-dark">
+      <div *ngFor="let item of projectData">
+        <app-project-card
+          [title]="item.name"
+          [description]="item.description"
+          [link]="item.link"
+          [image]="item.image"
+          [isLive]="item.isLive"
+          [gitLink]="item.gitLink"
+          [technologies]="item.technologies"
+        ></app-project-card>
+      </div>
+    </div>
   </div>
-  <div></div>
 </div>
