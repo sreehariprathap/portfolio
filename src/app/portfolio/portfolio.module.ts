@@ -8,7 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { ProjectCardComponent } from '../components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +19,6 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ContactComponent,
   ],
-  imports: [
-    CommonModule,
-    PortfolioRoutingModule
-  ]
+  imports: [CommonModule, PortfolioRoutingModule, ProjectCardComponent],
 })
-export class PortfolioModule { }
+export class PortfolioModule {}
