@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
     {
       id: 3,
       name: 'Fitness Matters',
-      description: 'a full stack health tracking app with angular-ionic as front end and nestJS as backend.',
+      description: 'a full stack health tracking app with angular-ionic as frontend and nestJS as backend.',
       link: '',
       image: 'assets/fitness.png',
       isLive: false,
